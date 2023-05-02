@@ -1,0 +1,125 @@
+body {
+    background-color: black;
+}
+
+#eyebox {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    position: relative;
+    background-color: black;
+  }
+
+#eye1 {
+    border: 2px solid black;
+    border-radius: 5px 180px 1px 150px;
+    border-top: 10px solid black;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-style: groove black;
+    box-shadow:10px 30px 50px 10px gray;
+    background-color: white;
+    overflow: hidden;
+    margin: 30px;
+    display: flexbox;
+    position: relative;
+    rotate: -37deg;
+}
+
+#eye2 {
+    border: 2px solid black;
+    border-radius: 180px 5px 150px 1px;
+    border-top: 10px solid black;
+    border-right: 5px solid black;
+    border-left: 5px solid black;
+    border-style: groove black;
+    box-shadow: 20px 10px 50px 5px gray;
+    background-color: white;
+    overflow: hidden;
+    margin: 30px;
+    display: flexbox;
+    position: relative;
+    rotate: 37deg;
+}
+
+.shar1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  animation-name: shari1;
+  animation-duration: 4s;
+}
+
+.shar2 {
+    position: relative;
+    top: 0;
+    left: 0;
+    animation-name: shari2;
+    animation-duration: 4s;
+}
+.sharin1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: 4s ease-in 4s shari4;
+}
+
+.sharin2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: 4s ease-in 4s shari5;
+}
+.sharing1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: 4s ease-in 8s shari4;
+}
+
+.sharing2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: 4s ease-in 8s shari5;
+}
+.sharinga1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: 4s ease-in 12s shari4;
+}
+
+.sharinga2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: 4s ease-in 12s shari5;
+}
+
+@keyframes shari1 {
+    from {transform:rotate(0deg)}
+    to {transform:rotate(360deg)}
+}
+@keyframes shari2 {
+    from {transform:rotate(360deg)}
+    to {transform:rotate(0deg)}
+}
+
+@keyframes shari4 {
+    0% {transform: rotate(0deg);opacity: 0;}
+    5% {opacity: .8;}
+    100% {transform: rotate(360deg);opacity: 1;}
+}
+@keyframes shari5 {
+    0% {transform: rotate(360deg);opacity: 0;}
+    5% {opacity: .8;}
+    100% {transform: rotate(0deg);opacity: 1;}
+}
